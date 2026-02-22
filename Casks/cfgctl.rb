@@ -3,7 +3,7 @@ cask "cfgctl" do
   name "cfgctl"
   desc "CLI for managing complex configuration setup"
   homepage "https://github.com/jmreicha/cfgctl"
-  version "0.7.0"
+  version "0.8.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "cfgctl" do
     on_intel do
       url "https://github.com/jmreicha/cfgctl/releases/download/v#{version}/cfgctl_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/jmreicha/cfgctl"
-      sha256 "ca0cc5ac9c7da7557367ecbb69e47f5b057e0d71b34ab8450feeb3100294034f"
+      sha256 "ae75e3743cb06d3253010659a9b2543b683f2b4c5494eca46f9453d7e4e85669"
     end
     on_arm do
       url "https://github.com/jmreicha/cfgctl/releases/download/v#{version}/cfgctl_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/jmreicha/cfgctl"
-      sha256 "f1d316f9c91f2d3e2a430d951e69ceee46e23465b6d2c31064ce7ae59a794226"
+      sha256 "e6dd0ba621931ea15bf64bdf17b020a9a3e23dc44bed162baf3a8fd79965db8e"
     end
   end
 
@@ -28,12 +28,12 @@ cask "cfgctl" do
     on_intel do
       url "https://github.com/jmreicha/cfgctl/releases/download/v#{version}/cfgctl_#{version}_linux_amd64.tar.gz",
         verified: "github.com/jmreicha/cfgctl"
-      sha256 "7473e5d4d5c4556a15320bdb231f2a81f375ed4c82885c18da3237045b951c01"
+      sha256 "8f160bf33096492b644183215c768e2bf9d9cc25be79cc13b15f1db8bd3467a8"
     end
     on_arm do
       url "https://github.com/jmreicha/cfgctl/releases/download/v#{version}/cfgctl_#{version}_linux_arm64.tar.gz",
         verified: "github.com/jmreicha/cfgctl"
-      sha256 "b7478d097db87bdf0226341e6835cd65a3fae1572d58564560a1f70b0f5e4818"
+      sha256 "f227a1e328c95c0222573d4cae7f650981d4780be61b6aa5ddb246c22d378a21"
     end
   end
 
