@@ -1,0 +1,41 @@
+# typed: false
+# frozen_string_literal: true
+
+class Cfgctl < Formula
+  desc "CLI for managing complex configuration setup"
+  homepage "https://github.com/jmreicha/cfgctl"
+  version "0.8.1"
+  license "MIT"
+
+  on_macos do
+    on_intel do
+      url "https://github.com/jmreicha/cfgctl/releases/download/v#{version}/cfgctl_#{version}_darwin_amd64.tar.gz"
+      sha256 "aca7884233fc5a5fba434de19d43823b08b5cacbf4497435ea36f2506724836b"
+    end
+
+    on_arm do
+      url "https://github.com/jmreicha/cfgctl/releases/download/v#{version}/cfgctl_#{version}_darwin_arm64.tar.gz"
+      sha256 "da46f5a621c10181ed282fda87bd489fc940e26bfcbaa84fa62799bfca086dc5"
+    end
+  end
+
+  on_linux do
+    on_intel do
+      url "https://github.com/jmreicha/cfgctl/releases/download/v#{version}/cfgctl_#{version}_linux_amd64.tar.gz"
+      sha256 "cef8351e02d48c66cafd104ac8329e77a4432d37a255299bd93bda156153f0e0"
+    end
+
+    on_arm do
+      url "https://github.com/jmreicha/cfgctl/releases/download/v#{version}/cfgctl_#{version}_linux_arm64.tar.gz"
+      sha256 "fd2c6f0c53dd3edf2a9b47730865707a45cb9f623b481caceb72d2a7c633389f"
+    end
+  end
+
+  def install
+    bin.install "cfgctl"
+  end
+
+  test do
+    system "#{bin}/cfgctl", "--version"
+  end
+end
