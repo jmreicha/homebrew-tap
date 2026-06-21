@@ -5,21 +5,21 @@
 class Cfgctl < Formula
   desc "CLI for managing complex configuration setup"
   homepage "https://github.com/jmreicha/cfgctl"
-  version "0.11.0"
+  version "0.11.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmreicha/cfgctl/releases/download/v0.11.0/cfgctl_0.11.0_darwin_amd64.tar.gz"
-      sha256 "907519e3a83f359dbbf8a1b12ad2805e1ccf46883ed792706315c7e40ee8083d"
+      url "https://github.com/jmreicha/cfgctl/releases/download/v0.11.1/cfgctl_0.11.1_darwin_amd64.tar.gz"
+      sha256 "027d9d8c34529e2f897f9dd1a44b5bdf1b2b66dbe70ef101c89ef510e5e86f49"
 
       define_method(:install) do
         bin.install "cfgctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmreicha/cfgctl/releases/download/v0.11.0/cfgctl_0.11.0_darwin_arm64.tar.gz"
-      sha256 "06a1d5233f86b067ecc7af68f3697b8f954b7625c148e3b4a56fd7656983c610"
+      url "https://github.com/jmreicha/cfgctl/releases/download/v0.11.1/cfgctl_0.11.1_darwin_arm64.tar.gz"
+      sha256 "cbf8bda68b1de47c4918401d378bcfb649354c2b4e967154eddad9f116a5f916"
 
       define_method(:install) do
         bin.install "cfgctl"
@@ -29,15 +29,15 @@ class Cfgctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmreicha/cfgctl/releases/download/v0.11.0/cfgctl_0.11.0_linux_amd64.tar.gz"
-      sha256 "1aa4432a85ea4042eb6b4f5760f77a6e12f30f91c245e3931acad8eceb617f53"
+      url "https://github.com/jmreicha/cfgctl/releases/download/v0.11.1/cfgctl_0.11.1_linux_amd64.tar.gz"
+      sha256 "5c341824aba2c2e353658371122d1d390391c760abaea0aad5508d60ddfa228b"
       define_method(:install) do
         bin.install "cfgctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmreicha/cfgctl/releases/download/v0.11.0/cfgctl_0.11.0_linux_arm64.tar.gz"
-      sha256 "37206028c6dd66c884967da775cd01d9e68a6c35ce3a9679dbe04f377d9638cf"
+      url "https://github.com/jmreicha/cfgctl/releases/download/v0.11.1/cfgctl_0.11.1_linux_arm64.tar.gz"
+      sha256 "a315c49015667bfe402ed2dce97ad35ed6ee6a2448958e20e3373fb6cf0cac0b"
       define_method(:install) do
         bin.install "cfgctl"
       end
